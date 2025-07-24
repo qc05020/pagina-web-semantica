@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Pagina web modulo 3</title>
+    <link rel="icon" href="img/FaviconUES.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <!--Opcional: Puedes agregar una fuente de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Contenedor principal que usará CSS Grid-->
+    <div class="grid-container">
+      <!--Encabezado-->
+      <header class="header">
+        <img src="img/logoUES.png" alt="Logo del Sitio" class="logo" />
+        <h1>Facultad de Ciencias Naturales y Matemáticas</h1>
+      </header>
+
+      <!--Barra de Navegación-->
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!--Contenido Principal-->
+      <main class="main">
+        <h2>Bienvenido a mi proyecto</h2>
+        <p>
+          La Facultad de Ciencias Naturales y Matemáticas es una de las más
+          importantes de la universidad. Aquí se forman profesionales en
+          diferentes áreas del conocimiento.
+        </p>
+
+        <!--Imagen insertada y adaptada-->
+        <img
+          src="img/banner1.png"
+          alt="Banner descriptivo"
+          class="main-image"
+        />
+
+        <p>
+          Ubicada en las principales ciudades del país: San Salvador, Santa Ana,
+          San Miguel y San Vicente. La Universidad de El Salvador es la
+          institución de educación superior que posee los mejores y más grandes
+          espacios educativos y de aprendizaje, enfocados en brindar excelencia
+          académica en todos los campos
+        </p>
+
+        <!--Video insertado y adaptado-->
+        <h3>Video de Presentación</h3>
+        <video controls class="main-video">
+          <source src="media/video-U.mp4" type="video/mp4" />
+          Tu navegador no soporta el elemento de video.
+        </video>
+      </main>
+
+      <!--Barra Lateral-->
+      <aside class="aside">
+        <h3>Últimas Noticias</h3>
+        <p>
+          Sección dedicada a nuestra comunidad estudiantil para que conozca las
+          ultimas noticias relacionadas a la Universidad de El Salvador
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://www.ues.edu.sv/ues-lleva-atencion-medica-integral-a-zona-fronteriza-de-ahuachapan-sur/"
+              >UES lleva atención médica</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.ues.edu.sv/innovacion-y-compromiso-en-tres-voces-del-congreso-de-matematica-y-su-didactica-2025/"
+              >Innovación y compromiso en tres</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.ues.edu.sv/estudio-del-laboratorio-de-opinion-publica-revela-division-ciudadana-en-occidente-del-pais/"
+              >Estudio del Laboratorio</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <!--Sección Destacada con Tarjetas (Flexbox)-->
+      <section class="section-cards">
+        <h2>Sección Estudiantil</h2>
+        <div class="cards-container">
+          <!--Tarjeta 1-->
+          <div class="card">
+            <h4>Carreras</h4>
+            <p>
+              Información sobre carreras y planes de estudios vigentes de la UES
+            </p>
+          </div>
+          <!--Tarjeta 2-->
+          <div class="card">
+            <h4>Requisitos de ingreso</h4>
+            <p>
+              Para que puede presentar su Aplicación al Proceso de Ingreso de la
+              Universidad de El Salvador, deberá poseer los siguientes
+              Requisitos Educativos
+            </p>
+          </div>
+          <!--Tarjeta 3-->
+          <div class="card">
+            <h4>Proceso de inscripción</h4>
+            <p>
+              Guía paso a paso sobre cómo inscribirse, desde la creación de una
+              cuenta en línea hasta la presentación de documentos
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Pie de Página-->
+      <footer class="footer">
+        <p>&copy; 2025 Williams Quijano. Todos los derechos reservados.</p>
+        <p>Curso Básico de HTML y CSS</p>
+      </footer>
+    </div>
+  </body>
+</html>

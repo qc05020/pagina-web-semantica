@@ -1,0 +1,182 @@
+/*Variables y Estilos Globales*/
+:root {
+  --primary-color: #0d47a1;
+  --secondary-color: #1976d2;
+  --light-color: #e3f2fd;
+  --text-color: #333;
+  --white-color: #ffffff;
+  --font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #f4f4f4;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/*Estructura Principal con CSS Grid*/
+.grid-container {
+  display: grid;
+  max-width: 1200px;
+  margin: 30px auto;
+  /*Definición de las áreas de la cuadrícula*/
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "section-cards section-cards section-cards"
+    "footer footer footer";
+  /*Definición del tamaño de las columnas*/
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px; /*Espacio entre los elementos de la cuadrícula*/
+}
+
+/*Asignación de áreas a los elementos*/
+/* Cada clase se asigna a su área definida en grid-template-areas */
+.header {
+  grid-area: header;
+}
+.nav {
+  grid-area: nav;
+}
+.main {
+  grid-area: main;
+}
+.aside {
+  grid-area: aside;
+}
+.section-cards {
+  grid-area: section-cards;
+}
+.footer {
+  grid-area: footer;
+}
+
+/*Estilos de los Elementos de la Cuadrícula*/
+.header,
+.nav,
+.main,
+.aside,
+.section-cards,
+.footer {
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  display: flex; /*Flexbox para alinear logo y título*/
+  align-items: center;
+}
+
+.header .logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.header h1 {
+  flex-grow: 1; /* Permite que el título ocupe el espacio restante */
+  text-align: center; /* Centra el texto dentro de su propio espacio */
+}
+
+/*Navegación (Flexbox)*/
+.nav ul {
+  list-style: none;
+  display: flex; /*Flexbox para menú horizontal*/
+  justify-content: center; /*Centrar los elementos*/
+  gap: 30px; /*Espacio entre enlaces*/
+}
+
+.nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /*Transición suave para el hover*/
+}
+
+.nav a:hover {
+  color: var(--secondary-color); /*Efecto hover*/
+}
+
+/*Contenido Principal (Imágenes y Video)*/
+.main-image,
+.main-video {
+  max-width: 100%; /*Hace que la imagen y el video sean responsivos*/
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+/*Sección de Tarjetas (Flexbox)*/
+.cards-container {
+  display: flex; /*Usamos Flexbox para alinear las tarjetas*/
+  justify-content: space-around; /*Distribuye el espacio entre ellas*/
+  flex-wrap: wrap; /*Permite que las tarjetas pasen a la siguiente línea si no caben*/
+  gap: 20px; /*Espacio entre tarjetas*/
+  margin-top: 15px;
+}
+
+.card {
+  background-color: var(--light-color);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 5px solid var(--secondary-color);
+  flex-basis: 30%; /*Ancho base de cada tarjeta*/
+  min-width: 250px; /*Ancho mínimo para que no se encojan demasiado*/
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /*Transición para el hover*/
+}
+
+.card:hover {
+  transform: translateY(-5px); /*Eleva la tarjeta al pasar el cursor*/
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /*Sombra más pronunciada*/
+}
+
+/*Pie de Página*/
+.footer {
+  background-color: #333;
+  color: var(--white-color);
+  text-align: center;
+}
+
+/*Media Query para Diseño Responsivo (≤ 768px)*/
+/*Esta es la parte clave para adaptar el diseño a pantallas pequeñas*/
+@media (max-width: 768px) {
+  .grid-container {
+    /*Cambiamos la cuadrícula a una sola columna*/
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "section-cards"
+      "footer";
+    /*Una sola columna que ocupe todo el ancho*/
+    grid-template-columns: 1fr;
+    margin: 15px;
+  }
+
+  .header {
+    flex-direction: column; /*Apila el logo y el título*/
+    text-align: center;
+  }
+
+  .header .logo {
+    margin-bottom: 10px;
+  }
+
+  .nav ul {
+    flex-direction: column; /*Apila los enlaces de navegación*/
+    align-items: center;
+    gap: 15px;
+  }
+}
