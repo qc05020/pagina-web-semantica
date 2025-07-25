@@ -180,3 +180,93 @@ body {
     gap: 15px;
   }
 }
+
+/* Estilos para las páginas internas carreras */
+/* Para resaltar el enlace de la página activa en el menú */
+.nav a.active {
+  color: var(--secondary-color);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Estilos para las secciones de contenido */
+.info-section {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.info-section:last-of-type {
+  border-bottom: none; /* Quita la línea del último elemento */
+}
+
+.info-section h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.main ul, .main ol {
+  padding-left: 20px; /* Mejora la indentación de las listas */
+}
+
+.main ul li, .main ol li {
+  margin-bottom: 8px; /* Espacio entre items de la lista */
+}
+
+
+/*--Estilo para formulario de contacto--*/
+.contact-form {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block; /* Hace que la etiqueta ocupe su propia línea */
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* Estilo para todos los campos de entrada y el textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit; /* Usa la fuente 'Roboto' del body */
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto visual al hacer clic en un campo (foco) */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none; /* Quita el borde por defecto del navegador */
+  border-color: var(--primary-color); /* Usa tu color primario */
+  box-shadow: 0 0 8px rgba(13, 71, 161, 0.3); /* Una sombra suave con tu color */
+}
+
+/* Estilo del botón de envío */
+.btn-submit {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color); /* Color primario */
+  color: var(--white-color); /* Texto blanco */
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+.btn-submit:hover {
+  background-color: var(--secondary-color); /* Color secundario */
+}

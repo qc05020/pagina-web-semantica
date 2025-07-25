@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--El título de la página actual-->
+    <title>Carreras - Facultad de Ciencias</title>
+    <link rel="icon" href="img/FaviconUES.png" type="image/x-icon" />
+
+    <!--El enlace al CSS, aqui mandamos a llamar al style.css-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Contenedor principal que usará CSS Grid-->
+    <div class="grid-container">
+      <!--Encabezado-->
+      <header class="header">
+        <img src="img/logoUES.png" alt="Logo del Sitio" class="logo" />
+        <h1>Facultad de Ciencias Naturales y Matemáticas</h1>
+      </header>
+
+      <!--Barra de Navegación-->
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="carreras.html" class="active">Carreras</a></li>
+          <li><a href="ingreso.html">Ingreso</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!--Contenido Principal-->
+      <main class="main">
+        <h2>Carreras</h2>
+        <p>
+          Descubre las carreras que te prepararán para ser un profesional líder
+          en el campo de la ciencia y la matemática. Cada plan de estudios está
+          diseñado para fomentar el pensamiento crítico y la innovación.
+        </p>
+
+        <!--Usamos una imagen diferente relacionada a la pagina carreras-->
+        <img
+          src="img/carreras.jpg"
+          alt="Estudiantes en una biblioteca"
+          class="main-image"
+        />
+
+        <article class="info-section">
+          <h3>Licenciatura en Matemática</h3>
+          <p>
+            Forma profesionales con una sólida base en las diversas áreas de la
+            matemática, capaces de resolver problemas complejos, modelar
+            situaciones reales y contribuir a la investigación científica.
+          </p>
+          <ul>
+            <li>Duración: 5 años</li>
+            <li>Modalidad: Presencial</li>
+            <li>Título a otorgar: Licenciado/a en Matemática</li>
+          </ul>
+        </article>
+
+        <article class="info-section">
+          <h3>Licenciatura en Física</h3>
+          <p>
+            Prepara científicos con un profundo conocimiento de las leyes que
+            rigen el universo, desde las partículas subatómicas hasta las
+            galaxias. Nuestros graduados trabajan en investigación, tecnología y
+            docencia.
+          </p>
+          <ul>
+            <li>Duración: 5 años</li>
+            <li>Modalidad: Presencial</li>
+            <li>Título a otorgar: Licenciado/a en Física</li>
+          </ul>
+        </article>
+
+        <article class="info-section">
+          <h3>Profesorado en Ciencias Naturales</h3>
+          <p>
+            Diseñada para formar educadores apasionados por la ciencia, con las
+            herramientas pedagógicas y el conocimiento disciplinario para
+            inspirar a las futuras generaciones en la educación básica y media.
+          </p>
+          <ul>
+            <li>Duración: 4 años</li>
+            <li>Modalidad: Semipresencial</li>
+            <li>Título a otorgar: Profesor/a en Ciencias Naturales</li>
+          </ul>
+        </article>
+      </main>
+
+      <!--Barra Lateral-->
+      <aside class="aside">
+        <h3>Últimas Noticias</h3>
+        <p>
+          Sección dedicada a nuestra comunidad estudiantil para que conozca las
+          ultimas noticias relacionadas a la Universidad de El Salvador
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.ues.edu.sv/ues-lleva-atencion-medica-integral-a-zona-fronteriza-de-ahuachapan-sur/">UES lleva atención médica</a>
+          </li>
+          <li>
+            <a href="https://www.ues.edu.sv/innovacion-y-compromiso-en-tres-voces-del-congreso-de-matematica-y-su-didactica-2025/">Innovación y compromiso en tres</a>
+          </li>
+          <li>
+            <a href="https://www.ues.edu.sv/estudio-del-laboratorio-de-opinion-publica-revela-division-ciudadana-en-occidente-del-pais/">Estudio del Laboratorio</a>
+          </li>
+        </ul>
+      </aside>
+
+      <!--Sección Destacada con Tarjetas-->
+      <section class="section-cards">
+        <h2>Sección Estudiantil</h2>
+        <div class="cards-container">
+          <div class="card">
+            <h4>Carreras</h4>
+            <p>
+              Información sobre carreras y planes de estudios vigentes de la UES
+            </p>
+          </div>
+          <div class="card">
+            <h4>Requisitos de ingreso</h4>
+            <p>
+              Para que puede presentar su Aplicación al Proceso de Ingreso de la
+              Universidad de El Salvador, deberá poseer los siguientes
+              Requisitos Educativos
+            </p>
+          </div>
+          <div class="card">
+            <h4>Proceso de inscripción</h4>
+            <p>
+              Guía paso a paso sobre cómo inscribirse, desde la creación de una
+              cuenta en línea hasta la presentación de documentos
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Pie de Página (el mismo que en index)-->
+      <footer class="footer">
+        <p>© 2025 Williams Quijano. Todos los derechos reservados.</p>
+        <p>Curso Básico de HTML y CSS</p>
+      </footer>
+    </div>
+  </body>
+</html>
